@@ -30,8 +30,6 @@ just for illustrating basic Kedro features.
 
 PLEASE DELETE THIS FILE ONCE YOU START WORKING ON YOUR OWN PROJECT!
 """
-
-from typing import Dict
 import pandas as pd
 
 
