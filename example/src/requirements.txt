@@ -114,6 +114,7 @@ whichcraft==0.6.1         # via cookiecutter
 widgetsnbextension==3.5.1  # via ipywidgets
 xlrd==1.2.0               # via -r /Users/nhatthai/kedro-environment/env/kedro-environment/example/src/requirements.in
 zipp==3.4.0               # via importlib-metadata
+s3fs==0.4.0               # Read data from AWS S3
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip

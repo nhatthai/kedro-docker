@@ -44,17 +44,21 @@
 # template. Please feel free to remove it once you remove the example pipeline.
 
 # define 'companies', 'shuttles', 'reviews' for running on Airflow
+# using S3
 companies:
   type: pandas.CSVDataSet
-  filepath: data/01_raw/companies.csv
+  filepath: s3://kedro-data/companies.csv
+  credentials: dev_s3
 
 shuttles:
   type: pandas.ExcelDataSet
-  filepath: data/01_raw/shuttles.xlsx
+  filepath: s3://kedro-data/shuttles.xlsx
+  credentials: dev_s3
 
 reviews:
   type: pandas.CSVDataSet
-  filepath: data/01_raw/reviews.csv
+  filepath: s3://kedro-data/reviews.csv
+  credentials: dev_s3
 
 preprocessed_companies:
   type: pandas.CSVDataSet
