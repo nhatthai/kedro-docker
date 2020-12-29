@@ -14,6 +14,16 @@
 + Read pickle files, run train model and then save the regression model(pickle format)
 + Load the regression model and run Predict from the pickle model
 
+
+### Get data from S3(checkout branch: feature/getting-data-from-S3)
++ Set configs in the conf/*/credentials.yml
+    ```
+    dev_s3:
+        client_kwargs:
+            aws_access_key_id: token
+            aws_secret_access_key: key
+    ```
+
 ### Build
 + [Setup Kedro Environment](https://kedro.readthedocs.io/en/0.16.6/02_get_started/01_prerequisites.html)
 
