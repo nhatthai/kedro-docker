@@ -15,6 +15,8 @@ backcall==0.2.0           # via ipython
 binaryornot==0.4.4        # via cookiecutter
 black==v19.10b0           # via -r /Users/nhatthai/kedro-environment/env/kedro-environment/example/src/requirements.in
 bleach==3.2.1             # via nbconvert
+boto3==1.16.44            # via s3fs
+botocore==1.19.44         # via boto3, s3fs, s3transfer
 cachetools==4.2.0         # via kedro
 certifi==2020.12.5        # via requests
 cffi==1.14.4              # via argon2-cffi
@@ -26,7 +28,7 @@ decorator==4.4.2          # via ipython
 defusedxml==0.6.0         # via nbconvert
 entrypoints==0.3          # via nbconvert
 flake8==3.8.4             # via -r /Users/nhatthai/kedro-environment/env/kedro-environment/example/src/requirements.in
-fsspec==0.6.3             # via kedro
+fsspec==0.6.3             # via kedro, s3fs
 future==0.18.2            # via cookiecutter
 idna==2.10                # via requests
 importlib-metadata==3.3.0  # via flake8, jsonschema, pluggy, pytest
@@ -38,7 +40,7 @@ isort==4.3.21             # via -r /Users/nhatthai/kedro-environment/env/kedro-e
 jedi==0.17.2              # via ipython
 jinja2-time==0.2.0        # via cookiecutter
 jinja2==2.11.2            # via cookiecutter, jinja2-time, nbconvert, notebook
-jmespath==0.10.0          # via kedro
+jmespath==0.10.0          # via boto3, botocore, kedro
 joblib==1.0.0             # via scikit-learn
 jsonschema==3.2.0         # via jupyterlab-launcher, nbformat
 jupyter-client==6.1.7     # via -r /Users/nhatthai/kedro-environment/env/kedro-environment/example/src/requirements.in, ipykernel, jupyter-console, kedro, nbclient, notebook, qtconsole
@@ -84,7 +86,7 @@ pyrsistent==0.17.3        # via jsonschema
 pytest-cov==2.10.1        # via -r /Users/nhatthai/kedro-environment/env/kedro-environment/example/src/requirements.in
 pytest-mock==1.13.0       # via -r /Users/nhatthai/kedro-environment/env/kedro-environment/example/src/requirements.in
 pytest==5.4.3             # via -r /Users/nhatthai/kedro-environment/env/kedro-environment/example/src/requirements.in, pytest-cov, pytest-mock
-python-dateutil==2.8.1    # via arrow, jupyter-client, pandas
+python-dateutil==2.8.1    # via arrow, botocore, jupyter-client, pandas
 python-json-logger==0.1.11  # via kedro
 pytz==2020.4              # via pandas
 pyyaml==5.3.1             # via kedro
@@ -93,6 +95,8 @@ qtconsole==5.0.1          # via jupyter
 qtpy==1.9.0               # via qtconsole
 regex==2020.11.13         # via black
 requests==2.25.1          # via cookiecutter
+s3fs==0.4.0               # via -r /Users/nhatthai/kedro-environment/env/kedro-environment/example/src/requirements.in
+s3transfer==0.3.3         # via boto3
 scikit-learn==0.23.0      # via -r /Users/nhatthai/kedro-environment/env/kedro-environment/example/src/requirements.in
 scipy==1.5.4              # via scikit-learn
 send2trash==1.5.0         # via notebook
@@ -106,7 +110,7 @@ tornado==6.1              # via ipykernel, jupyter-client, notebook, terminado
 traitlets==5.0.5          # via ipykernel, ipython, ipywidgets, jupyter-client, jupyter-core, nbclient, nbconvert, nbformat, notebook, qtconsole
 typed-ast==1.4.1          # via black
 typing-extensions==3.7.4.3  # via importlib-metadata
-urllib3==1.26.2           # via requests
+urllib3==1.26.2           # via botocore, requests
 wcwidth==0.2.5            # via prompt-toolkit, pytest
 webencodings==0.5.1       # via bleach
 wheel==0.32.2             # via -r /Users/nhatthai/kedro-environment/env/kedro-environment/example/src/requirements.in
@@ -114,7 +118,6 @@ whichcraft==0.6.1         # via cookiecutter
 widgetsnbextension==3.5.1  # via ipywidgets
 xlrd==1.2.0               # via -r /Users/nhatthai/kedro-environment/env/kedro-environment/example/src/requirements.in
 zipp==3.4.0               # via importlib-metadata
-s3fs==0.4.0               # Read data from AWS S3
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
