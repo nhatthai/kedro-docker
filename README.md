@@ -15,7 +15,7 @@
 + Load the regression model and run Predict from the pickle model
 
 
-### [Get data from S3](/tree/feature/getting-data-from-S3)
+### [Get data from S3](../../tree/feature/getting-data-from-S3)
 + Set configs in the conf/*/credentials.yml
     ```
     dev_s3:
